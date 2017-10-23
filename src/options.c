@@ -328,7 +328,8 @@ int ssh_options_set_algo(ssh_session session,
  *              - SSH_OPTIONS_KEY_EXCHANGE:
  *                Set the key exchange method to be used (const char *,
  *                comma-separated list). ex:
- *                "ecdh-sha2-nistp256,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1"
+ *                "curve25519-sha256@libssh.org,ecdh-sha2-nistp256,
+ *                diffie-hellman-group14-sha1,diffie-hellman-group1-sha1"
  *
  *              - SSH_OPTIONS_HOSTKEYS:
  *                Set the preferred server host key types (const char *,
